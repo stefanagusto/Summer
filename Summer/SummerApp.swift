@@ -12,6 +12,8 @@ struct SummerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .background(Color.black)
         }
     }
 }
+

@@ -11,6 +11,8 @@
 		B42360F02BFAECDA005176AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42360EF2BFAECDA005176AA /* ContentView.swift */; };
 		B42360F22BFAECDB005176AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42360F12BFAECDB005176AA /* Assets.xcassets */; };
 		B42360F52BFAECDB005176AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42360F42BFAECDB005176AA /* Preview Assets.xcassets */; };
+		B42A343D2BFC439F007FA265 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A343C2BFC439F007FA265 /* SpeechRecognizer.swift */; };
+		B42A34402BFC4428007FA265 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42A343F2BFC4428007FA265 /* Speech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B42360EF2BFAECDA005176AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B42360F12BFAECDB005176AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42360F42BFAECDB005176AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B42A343C2BFC439F007FA265 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		B42A343F2BFC4428007FA265 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42A34402BFC4428007FA265 /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,7 @@
 			children = (
 				B42360EC2BFAECDA005176AA /* Summer */,
 				B42360EB2BFAECDA005176AA /* Products */,
+				B42A343E2BFC4428007FA265 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +59,7 @@
 			children = (
 				B42360ED2BFAECDA005176AA /* SummerApp.swift */,
 				B42360EF2BFAECDA005176AA /* ContentView.swift */,
+				B42A343C2BFC439F007FA265 /* SpeechRecognizer.swift */,
 				B42360F12BFAECDB005176AA /* Assets.xcassets */,
 				B42360F32BFAECDB005176AA /* Preview Content */,
 			);
@@ -65,6 +72,14 @@
 				B42360F42BFAECDB005176AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B42A343E2BFC4428007FA265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B42A343F2BFC4428007FA265 /* Speech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			files = (
 				B42360F02BFAECDA005176AA /* ContentView.swift in Sources */,
 				B42360EE2BFAECDA005176AA /* SummerApp.swift in Sources */,
+				B42A343D2BFC439F007FA265 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +291,9 @@
 				DEVELOPMENT_TEAM = TL3VJLYVF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to use the microphone";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your meetings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +323,9 @@
 				DEVELOPMENT_TEAM = TL3VJLYVF8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to use the microphone";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your meetings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
